@@ -1,0 +1,24 @@
+[x] Word stemming, punctuation and stopword removal: As a pre-processing step, prior to any textual analysis.
+This involves stemming/lemmatization (reducing words to their fundamental meaning for grouping), the removal
+ of punctuation, and the removal of stop words -- the, is, at, etc.
+
+[x] Word frequency: Considering the frequency of individual words throughout the set of scraped posts. This
+ frequency could also be visualised graphically through a word cloud.
+
+[x] Word cluster frequency: Considering the frequency of bigrams, trigrams and n-grams (ordered sets of
+distinct words) throughout the set of scraped posts.
+
+[x] Word neighbourhood: Looking at the pairwise frequency between words in individual tweets, rather
+ than the set of scraped posts. This is done by counting the number of occurrences that one word
+  appears with another, for each tweet, and listing the most frequent pairs.
+
+Text network analysis: The word neighbourhood is essentially an undirected graph of which words
+appear with others in individual tweets. This graph can be visualised by plotting each word as a
+separate vertex as part of a network, and the edges can represent the relationship between two words.
+ A good example of this can be seen here: https://noduslabs.com/cases/text-network-analysis-seo/
+
+Using LIWC: Investigating the LIWC tool and seeing what forms of analysis it can provide.
+
+Sentiment Analysis: Utilising sentiment analysis for individual tweets, and ranking posts
+according to this metric. With this type of tool, we could list the top ten negative tweets
+for example, and investigate these for further insights.

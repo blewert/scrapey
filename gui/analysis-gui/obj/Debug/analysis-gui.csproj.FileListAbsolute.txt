@@ -1,0 +1,9 @@
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\bin\Debug\analysis-gui.exe.config
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\bin\Debug\analysis-gui.exe
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\bin\Debug\analysis-gui.pdb
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\obj\Debug\analysis-gui.csprojResolveAssemblyReference.cache
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\obj\Debug\analysis_gui.mainForm.resources
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\obj\Debug\analysis_gui.Properties.Resources.resources
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\obj\Debug\analysis-gui.csproj.GenerateResource.Cache
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\obj\Debug\analysis-gui.exe
+C:\git\gitlab\twitter-scrape\gui\analysis-gui\obj\Debug\analysis-gui.pdb

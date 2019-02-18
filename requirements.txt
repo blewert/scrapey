@@ -1,0 +1,12 @@
+# To be run with python 3.6.0
+# ..
+
+# Essential
+praw
+tweepy
+filelock
+google-api-python-client
+
+# Not essential
+sphinx
+sphinx-autobuild

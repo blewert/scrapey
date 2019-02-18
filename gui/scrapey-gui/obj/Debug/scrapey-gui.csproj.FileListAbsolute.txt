@@ -1,0 +1,10 @@
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\bin\Debug\scrapey-gui.exe.config
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\bin\Debug\scrapey-gui.exe
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\bin\Debug\scrapey-gui.pdb
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\obj\Debug\scrapey-gui.csprojResolveAssemblyReference.cache
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\obj\Debug\scrapey_gui.mainForm.resources
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\obj\Debug\scrapey_gui.Properties.Resources.resources
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\obj\Debug\scrapey-gui.csproj.GenerateResource.Cache
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\obj\Debug\scrapey-gui.exe
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\obj\Debug\scrapey-gui.pdb
+C:\git\gitlab\twitter-scrape\gui\scrapey-gui\obj\Debug\scrapey_gui.ScraperForm.resources
