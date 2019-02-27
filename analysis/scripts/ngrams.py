@@ -46,6 +46,7 @@ def process_row(x):
 
     #pre-processing: remove punctuation
     comment = re.sub(r'[^\w\s]', '', comment, re.UNICODE | re.IGNORECASE | re.MULTILINE);
+    comment = re.sub(r'\n', '', comment, re.UNICODE | re.IGNORECASE | re.MULTILINE);
 
     #Make the comment lowercase -- for case insensitive frequencies
     comment = comment.lower();

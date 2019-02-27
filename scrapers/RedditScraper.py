@@ -105,6 +105,8 @@ class RedditScraper:
         if self.streaming:
             return;
 
+        return;
+        
         #Set writer
         self.writer = writer;
 
@@ -123,10 +125,12 @@ class RedditScraper:
         self.index = 0;
         self.comments = [];
 
-        self.base_api_url = "https://api.pushshift.io/reddit/search?q=";
-
+        #self.base_api_url = "https://api.pushshift.io/reddit/search?q=";
+        self.base_api_url = "https://api.pushshift.io/reddit/search"
+        
         self.opener = urllib.request.FancyURLopener({});
-        self.url = self.base_api_url + self.query + "&limit=9999999&before=" + self.last_date;
+        #self.url = self.base_api_url + self.query + "&limit=9999999&before=" + self.last_date + "&subreddit=dyslexia";
+        self.url = self.base_api_url + "?limit=9999999&before=" + self.last_date + "&subreddit=dyslexia";
 
         print("[scrape] Opening reddit comment search api... (" + self.url + ")");
         f = self.opener.open(self.url);
