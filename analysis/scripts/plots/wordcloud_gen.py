@@ -50,12 +50,14 @@ for row in csv_reader:
     text += (row[0] + " ") * int(row[1]);
 #print(text);
 
-wordcloud = WordCloud(width=400*4, height=200*4, max_words=100, background_color="white", collocations=False).generate(text);
+wordcloud = WordCloud(width=400*5, height=200*5, background_color="white", collocations=False).generate(text);
 
-plt.figure();
+plt.figure(figsize=(20,10), facecolor='k');
 plt.imshow(wordcloud, interpolation="bilinear");
 plt.axis("off");
-plt.show();
+
+
+plt.savefig(args.out_file_name);
     
 csv_file.close();
 

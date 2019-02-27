@@ -158,15 +158,31 @@ for arr in [ top, bot ]:
                 
             return scores['compound'];
         
+        rows = [];
+        scores = [];
+        
         for i, comment in enumerate(comments):
             print("[write] writing comment %d" % (i+1));
             
             
             if args.sentiment != 1:
-                csv_writer.writerow([i, comment]);
+                #csv_writer.writerow([i, comment]);
+                rows.append([i, comment]);
             else:
                 sentiment_score = get_sentiment(comment);
-                csv_writer.writerow([i, comment, sentiment_score]);
+                scores.append(sentiment_score);
+                #csv_writer.writerow([i, comment, sentiment_score]);
+                rows.append([i, comment, sentiment_score]);
+        
+        min_score = min(scores);
+        max_score = max(scores);
+        avg_score = sum(scores) / float(len(scores));
+        
+        rows[0].extend(["average sentiment", "min sentiment", "max sentiment"]);
+        rows[1].extend([avg_score, min_score, max_score]);
+        
+        for row in rows:
+            csv_writer.writerow(row);
         
         out_csv_file.close();
         
