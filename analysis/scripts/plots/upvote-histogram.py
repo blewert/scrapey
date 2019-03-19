@@ -105,7 +105,8 @@ plt.rc('font', family='serif');
 
 plt.xlim(-25, 50);
 plt.xticks(np.arange(-25, 50, 5));
-plt.title("Scores of Reddit comments containing the term 'dyslexia'");
+#plt.title("Scores of Reddit comments containing the term 'dyslexia'");
+plt.title("Scores of Reddit comments from /r/dyslexia");
 plt.hist(scores, bins=args.bins);
 plt.ylabel("# of posts");
 plt.xlabel("Score");

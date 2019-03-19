@@ -130,7 +130,8 @@ print(filtered);
 plt.rc('font', family='serif');
 
 plt.xlim(-1, 1);
-plt.title("Sentiment frequency of Reddit comments containing the term 'dyslexia'");
+#plt.title("Sentiment frequency of Reddit comments containing the term 'dyslexia'");
+plt.title("Sentiment frequency of Reddit comments from /r/dyslexia");
 plt.hist(scores, bins=args.bins);
 plt.ylabel("# of posts");
 plt.xlabel("Sentiment value");

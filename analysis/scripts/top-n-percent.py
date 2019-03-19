@@ -68,22 +68,27 @@ botStart = floor(len(scores) * (1.0 - args.percent));
 print("top: %d to %d (%d)" % (topStart, topEnd, topEnd - topStart));
 print("bot: %d to %d (%d)" % (botStart, botEnd, topEnd - topStart));
 
-top = [ x[0] for x in scores[topStart : topEnd] ];
-bot = [ x[0] for x in scores[botStart : botEnd] ];
+top = [ x for x in scores[topStart : topEnd] ];
+bot = [ x for x in scores[botStart : botEnd] ];
 
 
 for arr in [ top, bot ]:
     
     results = {};
     comments = [];
+    votes = [];
     
-    for comment in arr:
+    for elem in arr:
+        
+        comment = elem[0];
+        vote = elem[1];
+        
+        votes.append(vote);
         
         # append comment and skip
         if args.posts == 1:
             comments.append(comment);
-            continue;
-            
+            continue;            
             
         #pre-processing: remove punctuation
         comment = re.sub(r'[^\w\s]', '', comment, re.UNICODE | re.IGNORECASE | re.MULTILINE);
@@ -167,12 +172,12 @@ for arr in [ top, bot ]:
             
             if args.sentiment != 1:
                 #csv_writer.writerow([i, comment]);
-                rows.append([i, comment]);
+                rows.append([i, comment, votes[i]]);
             else:
                 sentiment_score = get_sentiment(comment);
                 scores.append(sentiment_score);
                 #csv_writer.writerow([i, comment, sentiment_score]);
-                rows.append([i, comment, sentiment_score]);
+                rows.append([i, comment, votes[i], sentiment_score]);
         
         min_score = min(scores);
         max_score = max(scores);
